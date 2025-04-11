@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="openDay.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+
+    <section id="main">
+        <h1>Programs</h1>
+        <div class="topnav">
+        
+            <label for="searchbox">Search</label>
+            <input id="searchbox" type="search" oninput="getRes()" placeholder="Search..">
+        
+        </div>
+        <section id="topics">
+            <!-- topics
+                    topic1
+                        programs-single-topic
+                            individual-program
+                            individual-program
+                    topic 2 
+                        programs-single-topic
+                            individual-program
+                            individual-program
+                    topic 3
+                        programs-single-topic
+                            individual-program
+                            individual-program
+                        ...
+                        -->
+        </section>
+    </section>
+
+<script>
+function getRes(){
+    let target=document.getElementById("searchbox").value;
+    let topics=document.getElementById("topics");
+    for (let topic of topics.children){
+        topic.style.display='block';
+        if (!topic.textContent.toLowerCase().includes(target.toLowerCase())){
+            topic.style.display='none';
+        }
+    }
+
+}
+
+</script>
+</body>

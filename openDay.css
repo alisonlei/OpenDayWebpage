@@ -1,0 +1,25 @@
+.body{
+    box-sizing: border-box;
+    
+   
+}
+.topic{
+    border-bottom:3px solid;
+    padding:2px;
+}
+.programs-single-topic{
+    border:3px dashed;
+    padding:0;
+}
+/* individual program info style */
+.individual-program:nth-child(even){
+    background-color:beige ;
+
+}
+li{
+    list-style-type: none;
+}
+.program-title{
+    font-weight: bolder;
+    font-size: large;
+}
